@@ -1,0 +1,13 @@
+name: First action
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: New step
+        run: |
+          echo " HELLO HARSHA"
