@@ -15,4 +15,4 @@ jobs:
       - name: Test Contexts
         run: |
           echo ${{ github.actor  }}
-        if: ${{ github.event == push }}  
+        if: ${{ toJson(github.event) == "push" }}  
