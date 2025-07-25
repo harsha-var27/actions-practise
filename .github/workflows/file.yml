@@ -13,6 +13,6 @@ jobs:
           echo " HELLO HARSHA"
 
       - name: Test Contexts
-        if: ${{ github.event_name == "push" }}
+        if: ${{ github.event_name == push }}
         run: |
           echo "Hi Harsha"
